@@ -55,3 +55,6 @@ The plugin inserts quoted absolute paths as text. It does not upload, copy, or m
 herdr plugin link 'E:\herdr-photo-picker'
 herdr plugin action list --plugin nabil.photo-picker
 ```
+## License
+
+This project is licensed under the [MIT License](LICENSE).
