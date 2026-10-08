@@ -1,0 +1,13 @@
+id = "nabil.photo-picker"
+name = "Photo Picker"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Choose images in Windows and insert their paths into the active agent input."
+platforms = ["windows"]
+
+[[actions]]
+id = "pick-photo"
+title = "Pick photo for agent"
+description = "Open a file picker and insert selected image paths without submitting them."
+contexts = ["global", "pane"]
+command = ["powershell.exe", "-NoProfile", "-STA", "-ExecutionPolicy", "Bypass", "-Command", "& (Join-Path $env:HERDR_PLUGIN_ROOT 'pick-photo.ps1')"]
